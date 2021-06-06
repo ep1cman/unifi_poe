@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "unifi_poe"
+version = "0.1.0"
+description = ""
+authors = ["Sebastian Goscik <sebastian.goscik@live.co.uk>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.1"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.5b2", allow-prereleases = true}
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+unifi_poe = 'unifi_poe.unifi_poe:cli'
